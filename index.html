@@ -1,77 +1,70 @@
----
-layout: default
-overtitle: Made is a Jekyll theme
-title: For designers and web developers
-description: Show off your best work with this beautiful, minimal and customizable portfolio theme.
-featured_image: /images/social.jpg
----
-
-<div class="page-home">
-
-	{% if site.data.settings.hero_settings.background_image %}
-	<img src="{{ site.data.settings.hero_settings.background_image | relative_url }}" class="hero__background" draggable="false">
-	{% endif %}
-
-	<section class="hero">
-		<div class="wrap grid">
-			<div class="title">
-				<p class="subtitle">{{ page.overtitle }}</p>
-				<h1>{{ page.title }}</h1>
-			</div>
-
-			<p class="intro subtitle--light">
-				{{ page.description }}
-				<a href="#" class="hero__cta button--fill contact-trigger js-contact">Get In Touch</a>
-			</p>
-		</div>
-	</section>
-
-	<section class="listing">
-		<div class="wrap">
-
-			{% for project in site.projects reversed %}
-
-			{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
-
-			<article class="project__preview">
-				<h3 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h3>
-
-				<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
-					{% for image in project.gallery_images %}
-					<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
-					{% endfor %}
-				</div>
-
-				<div class="project__content grid" style="border-color: {{ accent_color }}">
-					<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
-					<p class="project__description --small">
-						{{ project.description }}
-						<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
-							style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View Case Study</a>
-					</p>
-				</div>
-			</article>
-
-			{% endfor %}
-		</div>
-	</section>
-
-	{% include section__about.html %}
-
-	<section class="recent-posts">
-		<div class="wrap grid">
-			<header class="recent-posts__header">
-				<h4>Recent blog posts</h4>
-				<a href="{{ '/blog' | relative_url }}" class="action button--text--accent --right">All Posts</a>
-			</header>
-
-			<div class="recent-posts__list grid">
-				{% for post in site.posts limit: 3 %}
-				{% include component__post-preview.html %}
-				{% endfor %}
-			</div>
-
-			<a href="{{ '/blog' | relative_url }}" class="action-bottom button--text--accent --right">All Posts</a>
-		</div>
-	</section>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
+    <title>HARINTIN</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./dist/css/comm.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+    />
+    <script defer src="./dist/vendor/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+    <script defer src="./dist/js/comm.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header"></header>
+      <main id="fullpage">
+        <section data-menuanchor="anchor1" id="intro" class="section"></section>
+        <section data-menuanchor="anchor2" id="info" class="section"></section>
+        <section data-menuanchor="anchor3" id="works" class="section"></section>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+    />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

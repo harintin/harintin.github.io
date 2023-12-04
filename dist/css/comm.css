@@ -346,15 +346,14 @@ main #intro .center-txt p {
 }
 main .portfolio-img {
   position: absolute;
-  top: 850px;
+  top: 50%;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   mix-blend-mode: difference;
 }
 main .portfolio-img img {
   display: block;
   margin: 0 auto;
-  width: 1750px;
-  height: 207px;
+  width: 80%;
 }/*# sourceMappingURL=comm.css.map */

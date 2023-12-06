@@ -95,6 +95,7 @@ body {
             font-family: "Sacred Valley", sans-serif;
             font-size: 6.875rem;
             font-weight: 400;
+            font-style: italic;
           }
           .rotate-star {
             animation: rotation reverse 7s infinite linear;
@@ -135,6 +136,7 @@ body {
             font-family: "Sacred Valley", sans-serif;
             font-size: 6.875rem;
             font-weight: 400;
+            font-style: italic;
           }
           .intro-tag-wrap {
             display: flex;
@@ -147,8 +149,9 @@ body {
               align-items: center;
               border-radius: 20px;
               border: 1.5px solid var(--light-bg);
-              background: var(--black);
               margin: 0 6px;
+              background-color: var(--black);
+
               p {
                 color: var(--light-bg);
                 font-family: "Pretendard", sans-serif;

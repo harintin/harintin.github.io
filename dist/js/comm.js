@@ -1,6 +1,4 @@
-// variables
-var $header_top = $(".header-top");
-var $nav = $("nav");
+// fullpage
 
 $(document).ready(function () {
   $("#fullpage").fullpage({

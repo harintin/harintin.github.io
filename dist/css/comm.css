@@ -520,6 +520,9 @@ body {
     padding: 0 2rem;
     margin: 0 auto;
   }
+  #intro .intro-wrap {
+    justify-content: center;
+  }
   #intro .intro-wrap .intro-top span {
     font-size: 0.6rem;
   }
@@ -560,7 +563,6 @@ body {
   }
   #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-2 p {
     font-size: 0.4rem;
-    margin-bottom: 50px;
   }
   #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-2 span {
     display: block;
@@ -572,7 +574,6 @@ body {
   }
   #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-3 span {
     text-align: left;
-    margin-bottom: 50px;
   }
   #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-3 .intro-tag-wrap {
     width: 100%;
@@ -603,6 +604,7 @@ body {
   #intro .intro-wrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   #intro .intro-wrap .intro-top span {
     font-size: 0.4rem;
@@ -671,6 +673,92 @@ body {
   }
   #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-4 .arrow svg {
     width: 100%;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .inner {
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  #intro .intro-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #intro .intro-wrap .intro-top span {
+    font-size: 0.3rem;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .center-txt {
+    display: block;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .center-txt span {
+    font-size: 2rem;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .rotate-star {
+    width: 30px;
+    height: 34px;
+    animation: rotation reverse 7s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .rotate-star svg {
+    width: 30px;
+    height: 34px;
+    display: inline;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(-359deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-2 {
+    margin-top: 20px;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-2 p {
+    font-size: 0.4rem;
+    margin-bottom: 20px;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-2 span {
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-3 {
+    display: block;
+    margin-top: 20px;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-3 span {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-3 .intro-tag-wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2fr;
+    row-gap: 15px;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #intro .intro-wrap .intro-center .center-txt-wrap .center-txt-4 .arrow svg {
+    width: 80%;
     height: 80px;
   }
 }

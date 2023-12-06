@@ -310,6 +310,7 @@ body {
   }
   #intro {
     .intro-wrap {
+      justify-content: center;
       .intro-top {
         span {
           font-size: 0.6rem;
@@ -353,7 +354,6 @@ body {
           .center-txt-2 {
             p {
               font-size: 0.4rem;
-              margin-bottom: 50px;
             }
             span {
               display: block;
@@ -365,7 +365,6 @@ body {
             display: block;
             span {
               text-align: left;
-              margin-bottom: 50px;
             }
             .intro-tag-wrap {
               width: 100%;
@@ -405,7 +404,7 @@ body {
     .intro-wrap {
       display: flex;
       flex-direction: column;
-
+      justify-content: center;
       .intro-top {
         span {
           font-size: 0.4rem;
@@ -477,6 +476,101 @@ body {
             .arrow {
               svg {
                 width: 100%;
+                height: 80px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .inner {
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  #intro {
+    .intro-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .intro-top {
+        span {
+          font-size: 0.3rem;
+        }
+      }
+      .intro-center {
+        .center-txt-wrap {
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          .center-txt {
+            display: block;
+            span {
+              font-size: 2rem;
+            }
+          }
+          .center-txt-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .rotate-star {
+            width: 30px;
+            height: 34px;
+            animation: rotation reverse 7s infinite linear;
+            transform-box: fill-box;
+            transform-origin: center;
+            svg {
+              width: 30px;
+              height: 34px;
+              display: inline;
+            }
+          }
+          @keyframes rotation {
+            0% {
+              transform: rotate(-359deg);
+            }
+            100% {
+              transform: rotate(0deg);
+            }
+          }
+          .center-txt-2 {
+            margin-top: 20px;
+            p {
+              font-size: 0.4rem;
+              margin-bottom: 20px;
+            }
+            span {
+              display: block;
+              width: 100%;
+              text-align: right;
+            }
+          }
+          .center-txt-3 {
+            display: block;
+            margin-top: 20px;
+            span {
+              text-align: left;
+              margin-bottom: 20px;
+            }
+            .intro-tag-wrap {
+              width: 100%;
+              display: grid;
+              grid-template-columns: 50% 50%;
+              grid-template-rows: 2fr;
+              row-gap: 15px;
+            }
+          }
+          .center-txt-4 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .arrow {
+              svg {
+                width: 80%;
                 height: 80px;
               }
             }

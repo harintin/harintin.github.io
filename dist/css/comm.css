@@ -1047,11 +1047,11 @@ body {
 }
 .contents .content-right .number {
   position: absolute;
-  top: 8%;
+  top: 15%;
   right: 0;
   color: var(--default-bg);
   font-family: "CHERMONI", sans-serif;
-  font-size: 10rem;
+  font-size: 6rem;
   font-style: italic;
   font-weight: 400;
 }
@@ -1089,8 +1089,8 @@ body {
 .contents .content-right .mobile-frame {
   position: absolute;
   z-index: 4;
-  bottom: 20%;
-  left: 6%;
+  bottom: 25%;
+  left: 8%;
   width: 155px;
   height: 300px;
 }
@@ -1842,4 +1842,13 @@ body {
   .contents .content-right {
     display: none;
   }
+}
+#fp-nav,
+.fp-slidesNav {
+  mix-blend-mode: difference;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: var(--light-bg) !important;
 }/*# sourceMappingURL=comm.css.map */

@@ -155,12 +155,11 @@ body {
               border-radius: 20px;
               border: 1.5px solid var(--light-bg);
               margin: 0 6px;
-              background-color: var(--black);
-
+              background-color: var(--light-bg);
               p {
-                color: var(--light-bg);
+                color: var(--default-txt);
                 font-family: "Pretendard", sans-serif;
-                font-size: 0.9rem;
+                font-size: 0.875rem;
                 font-weight: 500;
                 text-transform: uppercase;
               }
@@ -475,6 +474,7 @@ body {
 @media screen and (max-width: 500px) {
   .inner {
     padding: 0 2rem;
+    padding-bottom: 80px;
     margin: 0 auto;
   }
 
@@ -611,10 +611,11 @@ body {
 
 @media screen and (max-width: 390px) {
   .inner {
-    padding: 0 3rem;
+    padding: 80px 3rem;
     margin: 0 auto;
   }
   #intro {
+    height: 100%;
     .intro-wrap {
       display: flex;
       flex-direction: column;
@@ -626,7 +627,7 @@ body {
           font-weight: 500;
         }
         .top-center-txt {
-          margin-top: 20px;
+          margin-top: 0;
         }
       }
       .intro-top > span {
@@ -1252,8 +1253,8 @@ body {
         transform: translate(-50%, -50%);
         display: block;
         overflow: hidden;
-        width: 100%;
-        height: 500px;
+        width: 90%;
+        height: 450px;
         border-radius: 20px;
         img {
           vertical-align: top;
@@ -1583,6 +1584,7 @@ body {
 @media screen and (max-width: 600px) {
   .works-inner {
     padding: 0 2rem;
+    padding-bottom: 80px;
   }
   .contents {
     width: 100%;
@@ -1591,12 +1593,14 @@ body {
     justify-content: center;
     align-items: center;
     .content-left {
-      padding-top: 50px;
+      padding-top: 20px;
       width: 100%;
       height: 100%;
       display: block;
       .content-logo {
         width: 50%;
+        height: 70px;
+        margin-bottom: 0;
         img {
           width: 200px;
           height: 70px;
@@ -1606,8 +1610,9 @@ body {
       }
       .content-info {
         ul {
+          padding-top: 10px;
           li {
-            margin: 20px 0;
+            margin: 10px 0;
             display: block;
             h3 {
               width: 20%;
@@ -1616,7 +1621,7 @@ body {
               font-size: 0.8rem;
               font-weight: 500;
               text-transform: uppercase;
-              margin-bottom: 10px;
+              margin-bottom: 5px;
             }
             .badge {
               p {
@@ -1637,7 +1642,7 @@ body {
               display: grid;
               grid-template-columns: 1fr 1fr;
               grid-gap: 15px;
-              row-gap: 10px;
+              row-gap: 5px;
               .page-badge {
                 border-left: 4px solid var(--black);
                 background: var(--white);

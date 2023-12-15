@@ -748,6 +748,141 @@ body {
 
 // intro 미디어쿼리 끝
 
+// info 섹션 시작
+
+#info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .info-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    .info-left-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      margin-bottom: 40px;
+      h2 {
+        color: #fff;
+        text-align: left;
+        font-family: "pretendard", sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding-right: 10px;
+      }
+      h2.eng-name {
+        color: #fff;
+        text-align: left;
+        font-family: "pretendard", sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 0 10px;
+      }
+      h3 {
+        color: #fff;
+        text-align: left;
+        font-family: "pretendard", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 0 10px;
+        letter-spacing: 2px;
+      }
+      p {
+        color: #fff;
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        padding: 0 10px;
+        letter-spacing: 1px;
+      }
+    }
+    .info-left-txt {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      ul {
+        width: 100%;
+        & > li {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 40px;
+          width: 100%;
+          h4 {
+            width: 30%;
+            color: #fff;
+            text-align: left;
+            font-family: "Roboto", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-right: 80px;
+            white-space: nowrap;
+          }
+          ul {
+            li {
+              margin-bottom: 10px;
+              strong {
+                color: #fff;
+                font-family: "Roboto", sans-serif;
+                font-size: 1rem;
+                font-weight: 500;
+                margin-right: 20px;
+                white-space: nowrap;
+              }
+              p {
+                color: #fff;
+                text-align: left;
+                font-family: "pretendard", sans-serif;
+                font-size: 0.9rem;
+                font-weight: 400;
+                margin-right: 20px;
+              }
+            }
+          }
+          ul.skills {
+            width: 100%;
+            li {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .skills-box-wrap {
+                display: flex;
+                align-items: center;
+                .skills-box {
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 30px;
+                  margin: 0 5px;
+                }
+                .box-on {
+                  background-color: var(--white);
+                  border: 1px solid var(--white);
+                }
+                .box-off {
+                  background-color: transparent;
+                  border: 1px solid var(--white);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// info 섹션 끝
+
 // 콘텐츠 섹션 시작
 
 .works {

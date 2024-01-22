@@ -1460,7 +1460,7 @@ body {
 .contents .content-right .desktop-cover {
   position: relative;
   width: 100%;
-  height: 50%;
+  height: 40%;
 }
 .contents .content-right .desktop-cover .img-box {
   border-radius: 30px;
@@ -1475,6 +1475,7 @@ body {
   align-items: center;
 }
 .contents .content-right .desktop-cover .img-box img {
+  min-width: 100%;
   max-height: 100%;
 }
 .contents .content-right .responsive-cover {

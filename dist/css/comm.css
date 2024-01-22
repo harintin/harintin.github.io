@@ -939,7 +939,7 @@ body {
   align-items: center;
 }
 #info .info-left {
-  width: 70%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;

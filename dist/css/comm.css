@@ -2200,4 +2200,33 @@ body {
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: var(--light-bg) !important;
+}
+
+.lastpage {
+  background-color: var(--default-bg);
+}
+.lastpage .last-txt-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lastpage .last-txt-wrap .last-txt {
+  color: var(--white);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lastpage .last-txt-wrap .last-txt span {
+  font-family: "CHERMONI", sans-serif;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.lastpage .last-txt-wrap .last-txt p {
+  margin: 0 30px;
+  font-family: "pretendard", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
 }/*# sourceMappingURL=comm.css.map */

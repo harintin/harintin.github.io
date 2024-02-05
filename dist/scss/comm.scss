@@ -2081,3 +2081,34 @@ body {
 .fp-slidesNav ul li a span {
   background: var(--light-bg) !important;
 }
+
+// last page
+
+.lastpage {
+  background-color: var(--default-bg);
+  .last-txt-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .last-txt {
+      color: var(--white);
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        font-family: "CHERMONI", sans-serif;
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 400;
+      }
+      p {
+        margin: 0 30px;
+        font-family: "pretendard", sans-serif;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+  }
+}
